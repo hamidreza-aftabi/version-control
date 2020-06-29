@@ -1,0 +1,7 @@
+sudo update-alternatives --install /usr/bin/java java /home/pi/jdk1.8.0/bin/java 1 
+sudo update-alternatives --set java /home/pi/jdk1.8.0/bin/java
+nano .profile
+
+JAVA_HOME="/home/pi/jdk1.8.0"
+export JAVA_HOME
+PATH="$JAVA_HOME/bin:$PATH"

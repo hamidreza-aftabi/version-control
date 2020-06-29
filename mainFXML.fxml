@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="596.0" prefWidth="646.0" stylesheets="@../../../../Desktop/application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="272.0" layoutY="373.0" onAction="#handleButtonAction" prefHeight="29.0" prefWidth="102.0" text="Log In" textFill="#c2bfbf" />
+      <TextField fx:id="Username" layoutX="221.0" layoutY="224.0" prefHeight="27.0" prefWidth="204.0" promptText="Username" />
+      <Label fx:id="label1" layoutX="116.0" layoutY="223.0" style="-fx-background-color: ;" text="Username" textFill="#797878" />
+      <Label fx:id="label2" layoutX="117.0" layoutY="271.0" text="Password" textFill="#797878" />
+      <PasswordField fx:id="Password" layoutX="221.0" layoutY="272.0" prefHeight="27.0" prefWidth="204.0" promptText="Password" />
+      <ImageView fitHeight="58.0" fitWidth="80.0" layoutX="515.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/images-1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="112.0" fitWidth="179.0" layoutX="234.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/simplegrayloginbuttonthreemd.png" />
+         </image>
+      </ImageView>
+    </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

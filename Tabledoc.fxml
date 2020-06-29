@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainFxmlController">
+   <center>
+      <AnchorPane id="AnchorPane" prefHeight="596.0" prefWidth="646.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <children>
+            <SplitPane dividerPositions="0.8215488215488216" layoutX="38.0" layoutY="198.0" orientation="VERTICAL" prefHeight="596.0" prefWidth="646.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+              </items>
+            </SplitPane>
+            <TabPane prefHeight="596.0" prefWidth="646.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <tabs>
+                <Tab text="Server">
+                     <content>
+                        <TableView fx:id="tableid" prefHeight="200.0" prefWidth="200.0" stylesheets="@../../../../Desktop/application2.css">
+                          <columns>
+                            <TableColumn fx:id="iId" prefWidth="75.0" text="ID" />
+                            <TableColumn fx:id="iname" prefWidth="75.0" text="FileName" />
+                             <TableColumn fx:id="istatus" prefWidth="75.0" text="Status" />
+                            <TableColumn fx:id="ibyte" prefWidth="75.0" text="Byte" />
+                          </columns>
+                        </TableView>
+                     </content>
+                  </Tab>
+                <Tab text="Client" />
+              </tabs>
+            </TabPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
